@@ -1,0 +1,138 @@
+baseurl = "mindfulmusic.today"
+DefaultContentLanguage = "en"
+#DefaultContentLanguage = "ja"
+title = "mindfulmusic"
+theme = "adbhugo"
+metaDataFormat = "yaml"
+pygmentsStyle = "trac"
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+#pygmentsUseClassic = true
+#pygmentOptions = "linenos=inline"
+#disqusShortname = "XXX"
+#googleAnalytics = "XXX"
+
+[Params]
+  homeTitle = "mindfulmusic" # Set a different text for the header on the home page
+  subtitle = "daily deep listening"
+  logo = "img/android-chrome-192x192.png" # Expecting square dimensions
+  favicon = "img/favicon.ico"
+  dateFormat = "January 2, 2006"
+  commit = false
+  rss = false
+  comments = true
+  readingTime = true
+  wordCount = true
+  useHLJS = true
+  socialShare = true
+  delayDisqus = true
+  showRelatedPosts = true
+#  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
+
+[[Params.bigimg]]
+  src = "img/android-chrome-512x512.png"
+  desc = "mmgraph"
+#[[Params.bigimg]]
+#  src = "img/sphere.jpg"
+#  desc = "Sphere"
+#  # position: see values of CSS background-position.
+#  position = "center top"
+#[[Params.bigimg]]
+#  src = "img/hexagon.jpg"
+#  desc = "Hexagon"
+
+[taxonomies]
+   tag = "tags"
+   category = "categories"
+
+[Author]
+  name = "Adam McCartney"
+  website = "admccartney.mur.at"
+  email = "adam@mur.at"
+  #facebook = "adam.mccartney.927"
+  #googleplus = "+username" # or xxxxxxxxxxxxxxxxxxxxx
+  github = "adammccartney"
+  #gitlab = "username"
+  #bitbucket = "username"
+  #twitter = "username"
+  #reddit = "username"
+  linkedin = "admccartney"
+  #xing = "username"
+  #stackoverflow = "users/XXXXXXX/username"
+  #snapchat = "username"
+  #instagram = "adam_c_mccartney"
+  youtube = "user/ad199" # or channel/channelname
+  #soundcloud = "gophernot"
+  #spotify = "username"
+  #bandcamp = "adammccartney"
+  #itchio = "username"
+  #vk = "username"
+  #paypal = "SL4L4VB3BS3K6"
+  #telegram = "username"
+  #500px = "username"
+
+
+#[[menu.main]]
+#    name = "About"
+#    url = "about/"
+#    weight = 2
+#
+#[[menu.main]]
+#    name = "Music"
+#    url = "music/"
+#    weight = 3
+#
+#[[menu.main]]
+#    name = "Programming"
+#    url = "programming/"
+#    weight = 4
+#
+#[[menu.main]]
+#    name = "Tags"
+#    url = "tags"
+#    weight = 6
+#
+#[[menu.main]]
+#    parent = "Tags"
+#    name = "Partners"
+#    url = "partners"
+#    weight = 1
+#
+#[[menu.main]]
+#    parent = "Tags"
+#    name = "Instruments"
+#    url = "instruments"
+#    weight = 2
+#
+#[[menu.main]]
+#    parent = "Tags"
+#    name = "Categories"
+#    url = "categories"
+#    weight = 3
+#
+#[[menu.main]]
+#    parent = "Tags"
+#    name = "Videos"
+#    url = "videos"
+#    weight = 4
+#
+#[[menu.main]]
+#    parent = "Tags"
+#    name = "Recordings"
+#    url = "recordings"
+#    weight = 5
+#
+[related]
+
+threshold = 80
+includeNewer = true
+toLower = false
+
+[[related.indices]]
+name = "keywords"
+weight = 100
+[[related.indices]]
+name = "date"
+weight = 10
+pattern = "2019"
