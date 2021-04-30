@@ -1,0 +1,11 @@
+# theme (might add as submodule later
+themes/beautifulhugo
+
+# generated site files 
+/static/sounds
+
+# binary files 
+*.wav
+*.jpg
+*.jpeg
+*.pdf
