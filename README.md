@@ -1,4 +1,4 @@
-# placeholder website for mindfulemusic.today
+# placeholder website for mindfulmusic.today
 
 build environment:
 + go1.11.6 linux/amd64
