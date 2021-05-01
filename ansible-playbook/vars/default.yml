@@ -1,0 +1,7 @@
+---
+app_user: "adam"
+http_host: "mindfulmusic.today"
+http_conf: "mindfulmusic.today.conf"
+http_port: "80"
+disable_default: true
+site_src: "Websites/mindfulmusic"

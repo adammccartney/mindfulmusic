@@ -1,0 +1,29 @@
+##################################################
+# Installs hugo, deploys static site from github
+##################################################
+---
+- hosts: all
+  become: true
+  vars_files:
+    - vars/default.yml
+
+  tasks:
+    - name: Install git, hugo, vim
+      apt: name={{ item }} update_cache=yes state=latest force_apt_get=yes
+      loop: [ 'git', 'golang', 'hugo']
+
+    - name: Create build dir
+      file:
+        path: "/home/{{ app_user }}/{{ site_src }}"
+        state: directory
+        owner: "{{ app_user }}"
+        mode: '0755'
+
+    - name: Pull website from source
+      git:
+        repo: 'https://github.com/adammccartney/mindfulmusic.git'
+        dest: "/home/{{ app_user }}/{{ site_src }}" 
+
+    - name: execute script to build and deploy site 
+      script: scripts/sites.sh
+        
